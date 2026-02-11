@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jessica Rose — Segurança do Trabalho
 
-## Getting Started
+Site institucional para consultoria especializada em Segurança e Saúde do Trabalho (SST), voltado para micro e pequenas empresas.
 
-First, run the development server:
+## Visão Geral
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Landing page completa com seções de apresentação, serviços, depoimentos, FAQ e contato. Foco em conversão via WhatsApp e solicitação de orçamento.
+
+### Seções
+
+- **Hero** — Apresentação principal com animações flutuantes e CTAs
+- **Stats** — Números e métricas de resultado
+- **About** — Sobre a profissional, com foto e credenciais
+- **Services** — Catálogo de serviços (PGR, PCMSO, laudos, treinamentos)
+- **Testimonials** — Depoimentos de clientes com carrossel
+- **FAQ** — Perguntas frequentes com accordion
+- **Contact** — Informações de contato e redes sociais
+- **Footer** — Rodapé institucional
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router + Turbopack)
+- **UI:** React 19, CSS Modules, Lucide Icons
+- **Tipografia:** Lato (via `next/font`)
+- **Linguagem:** TypeScript
+
+## Paleta de Cores
+
+| Token | Hex | Uso |
+|---|---|---|
+| `--color-primary` | `#105372` | Navy — botões, CTAs, headings |
+| `--color-primary-light` | `#44b4c0` | Teal — acentos, destaques |
+| `--color-sage` | `#5a9e87` | Verde sálvia — badges de segurança |
+| `--color-secondary` | `#5c80a0` | Azul aço — suporte |
+| `--color-neutral` | `#c9c4bc` | Cinza quente — elementos neutros |
+| `--color-cream` | `#f2efeb` | Background geral |
+
+## Estrutura do Projeto
+
+```
+app/
+├── globals.css          # Design tokens, animações, estilos globais
+├── layout.tsx           # Layout raiz (font, metadata)
+├── page.tsx             # Composição das seções
+└── page.module.css
+
+components/
+├── sections/            # Seções da landing page
+│   ├── Hero.tsx
+│   ├── Stats.tsx
+│   ├── About.tsx
+│   ├── Services.tsx
+│   ├── Testimonials.tsx
+│   ├── Faq.tsx
+│   ├── Contact.tsx
+│   ├── Footer.tsx
+│   ├── Navbar.tsx
+│   └── WhatsAppFloat.tsx
+└── ui/                  # Componentes reutilizáveis
+
+data/                    # Dados estáticos (navegação, serviços, FAQ)
+hooks/                   # Custom hooks
+public/                  # Imagens e assets estáticos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Desenvolvimento
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Instalar dependências
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Servidor de desenvolvimento
+npm run dev
 
-## Learn More
+# Build de produção
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
+# Servir build local
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Lint
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run lint
+```
