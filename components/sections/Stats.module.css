@@ -1,0 +1,19 @@
+.section {
+  background: var(--color-dark);
+  padding: 52px 24px;
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+}
+
+.label {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 8px;
+  font-size: 0.95rem;
+  font-weight: 400;
+}

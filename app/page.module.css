@@ -1,0 +1,5 @@
+.root {
+  font-family: var(--font-sans);
+  color: var(--color-dark);
+  overflow-x: hidden;
+}

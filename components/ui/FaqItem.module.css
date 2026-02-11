@@ -1,0 +1,54 @@
+.item {
+  border-bottom: 1px solid rgba(16, 83, 114, 0.15);
+  overflow: hidden;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  text-align: left;
+  gap: 16px;
+}
+
+.chevron {
+  flex-shrink: 0;
+  color: var(--color-primary);
+  transition: transform 0.3s ease;
+}
+
+.chevronOpen {
+  flex-shrink: 0;
+  color: var(--color-primary);
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+}
+
+.content {
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.contentOpen {
+  overflow: hidden;
+  opacity: 1;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.answer {
+  margin: 0;
+  padding-bottom: 24px;
+  color: #555;
+  line-height: 1.7;
+  font-size: 1rem;
+}

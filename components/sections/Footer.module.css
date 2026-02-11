@@ -1,0 +1,48 @@
+.footer {
+  background: var(--color-dark);
+  padding: 40px 24px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.brandIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 0.85rem;
+}
+
+.brandName {
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.copyright {
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.services {
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
