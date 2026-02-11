@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CircleCheck } from "lucide-react";
 import Reveal from "@/components/ui/Reveal";
 import { aboutFeatures } from "@/data/navigation";
@@ -9,8 +10,15 @@ export default function About() {
       <div className={styles.inner}>
         <Reveal className={styles.photoWrap}>
           <div className={styles.photoOuter}>
-            <div className={styles.photoInner}>
-              <div className={styles.avatar}>👩‍💼</div>
+            <Image
+              src="/jessica-rose.jpeg"
+              alt="Jessica Rose — Técnica em Segurança do Trabalho"
+              fill
+              className={styles.photo}
+              sizes="(max-width: 768px) 100vw, 420px"
+              priority
+            />
+            <div className={styles.photoOverlay}>
               <div className={styles.name}>Jessica Rose</div>
               <div className={styles.role}>Técnica em Segurança do Trabalho</div>
               <div className={styles.badges}>

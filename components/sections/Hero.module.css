@@ -134,6 +134,8 @@
   align-items: center;
   min-width: 300px;
   position: relative;
+  animation: hero-text-reveal 0.8s ease 0.35s forwards;
+  opacity: 0;
 }
 
 .outerCircle {
